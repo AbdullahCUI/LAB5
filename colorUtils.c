@@ -21,3 +21,9 @@ int toGrayScaleAverage(int r, int g, int b) {
   //TODO: test this, it may be wrong!
   return (r + g + b) / 3;
 }
+//lightness technique
+int toGrayScaleLightness(int r, int g, int b){
+  int max = 0, min = 0;
+  if(r>g && r>b){
+    max = r;
+  }
