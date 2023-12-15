@@ -29,3 +29,4 @@ int toGrayScaleAverage(int r, int g, int b);
 int toGrayScaleAverage(int r, int g, int b);
 int toGrayScaleLightness(int r, int g, int b);
 int toGrayScaleLuminosity(int r, int g, int b);
+int toSepiaRed(int r, int g, int b);
