@@ -50,3 +50,14 @@ int toGrayScaleLightness(int r, int g, int b){
   int filter = (0.21 * r + 0.72 * g + 0.07 * b);
   return round(filter);
 }
+
+//sepia filter
+int toSepiaRed(int r, int g, int b){
+  int red = (0.393 * r + 0.769 * g + 0.189 * b);
+  if(red>255){
+    return 255;
+  }
+  else{
+    return round(red);
+  }
+}
