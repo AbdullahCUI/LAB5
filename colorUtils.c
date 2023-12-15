@@ -27,3 +27,21 @@ int toGrayScaleLightness(int r, int g, int b){
   if(r>g && r>b){
     max = r;
   }
+   else if (g>r && g>b){
+    max = g;  
+  }
+  else{
+    max = b;
+  }
+  if(r<g && r<b){
+    min = r;
+  }
+  else if(g<r && g<b){
+    min = g;
+  }
+  else{
+    min = b;
+  }
+  return (max + min)/2;
+ 
+}
