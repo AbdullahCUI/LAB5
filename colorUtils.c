@@ -10,6 +10,7 @@ int max(int x, int y, int z) {
   m = m > z ? m : z;
   return m;
 }
+
 int min(int x, int y, int z){
   int m = x < y ? x : y;
   m = m < z ? m : z;
